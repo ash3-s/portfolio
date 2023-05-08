@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import React from "react";
 
-const index = () => {
+const Index = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleNavbar = () => {
@@ -84,7 +84,7 @@ const index = () => {
         </nav>
       </div>
       <h1 className="opacity-80 transition-opacity duration-1000 ease-in-out hover:from-violet-400 hover:to-sky-400 hover:drop-shadow-lg hover:opacity-100 py-72 font-Rampart text-transparent bg-clip-text text-center font-bold text-8xl bg-gradient-to-r from-sky-400 via-violet-400 to-purple-500 ">
-        <div>Hey, I'm Ashwin.</div>
+        <div>Hey, I&apos;m Ashwin.</div>
         <div>
           <h2 className="font-rob from-sky-400 via-violet-400 to-purple-500  text-6xl pt-8">
             Web Developer
@@ -174,7 +174,7 @@ const index = () => {
         About Me
       </h2>
       <p className="font-mon text-2xl mx-auto lg:mx-16 lg:mt-4">
-        My name is Ashwin Suresh, and I am currently pursuing a Bachelor's
+        My name is Ashwin Suresh, and I am currently pursuing a Bachelor&apos;s
         degree in Computer Science and Engineering at Ahalia School of
         Engineering and Technology in India.
       </p>
@@ -200,4 +200,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;
