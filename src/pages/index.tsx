@@ -95,14 +95,14 @@ const index = () => {
         </div>
       </h1>
       <h2 className="font-mon text-6xl mx-auto lg:mx-16 mb-20">Projects</h2>
-      <div class="max-w-md mx-auto lg:max-w-fit lg:mt-28  bg-gray-900 rounded-xl shadow-md overflow-hidden md:max-w-2xl ">
-        <div class="md:flex justify-center items-center">
-          <div class="md:flex-shrink-0 py-20 ml-5">
+      <div className="max-w-md mx-auto lg:max-w-fit lg:mt-28  bg-gray-900 rounded-xl shadow-md overflow-hidden md:max-w-2xl ">
+        <div className="md:flex justify-center items-center">
+          <div className="md:flex-shrink-0 py-20 ml-5">
             <svg
               width="346.5"
               height="91.21367493541021"
               viewBox="0 0 369.5454545454545 97.28022789254689"
-              class="css-1j8o68f"
+              className="css-1j8o68f"
             >
               <defs id="SvgjsDefs3648">
                 <linearGradient id="SvgjsLinearGradient3653">
@@ -120,7 +120,6 @@ const index = () => {
               </defs>
               <g
                 id="SvgjsG3649"
-                featurekey="symbolFeature-0"
                 transform="matrix(1.3891873056016855,0,0,1.3891873056016855,-14.895318228038425,-12.185921008141122)"
                 fill="#ff5722"
               >
@@ -131,7 +130,6 @@ const index = () => {
               </g>
               <g
                 id="SvgjsG3650"
-                featurekey="nameFeature-0"
                 transform="matrix(1.7839930766981846,0,0,1.7839930766981846,115,2.8042306837071678)"
                 fill="url(#SvgjsLinearGradient3653)"
               >
@@ -139,16 +137,16 @@ const index = () => {
               </g>
             </svg>
           </div>
-          <div class="p-8">
-            <div class="uppercase tracking-wide text-2xl text-indigo-500 font-semibold">
+          <div className="p-8">
+            <div className="uppercase tracking-wide text-2xl text-indigo-500 font-semibold">
               <h2 className="font-pop text-4xl">WatchStack</h2>
             </div>
-            <p class="mt-2 text-white font-mon text-2xl">
+            <p className="mt-2 text-white font-mon text-2xl">
               A Web App to track Watchlists of Movies and TV Shows, and also
               Backlogs of Games!
             </p>
             <div className="lg:py-10  mx-auto space-x-10">
-              <button class="cssbuttons-io">
+              <button className="cssbuttons-io">
                 <span>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                     <path fill="none" d="M0 0h24v24H0z"></path>
@@ -163,7 +161,7 @@ const index = () => {
               <button>
                 <a
                   href="https://movie-3xttohvhx-ash3-s.vercel.app/"
-                  class="button_top"
+                  className="button_top"
                 >
                   Go There
                 </a>
