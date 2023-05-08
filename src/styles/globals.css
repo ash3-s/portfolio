@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer components {
+  .buttonn {
+    --glow-color: rgb(217, 176, 255);
+    --glow-spread-color: rgba(191, 123, 255, 0.781);
+    --enhanced-glow-color: rgb(231, 206, 255);
+    --btn-color: rgb(100, 61, 136);
+    border: 0.25em solid var(--glow-color);
+    padding: 1em 3em;
+    color: var(--glow-color);
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 0 0 1em 0.25em var(--glow-color),
+      0 0 4em 1em var(--glow-spread-color),
+      inset 0 0 0.75em 0.25em var(--glow-color);
+    text-shadow: 0 0 0.5em var(--glow-color);
+    position: relative;
+    transition: all 0.3s;
+  }
+
+  .buttonn::after {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--glow-spread-color);
+    filter: blur(2em);
+    opacity: 0.7;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, 0.6);
+  }
+
+  .buttonn:hover {
+    color: var(--btn-color);
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1em 0.25em var(--glow-color),
+      0 0 4em 2em var(--glow-spread-color),
+      inset 0 0 0.75em 0.25em var(--glow-color);
+  }
+
+  .buttonn:active {
+    box-shadow: 0 0 0.6em 0.25em var(--glow-color),
+      0 0 2.5em 2em var(--glow-spread-color),
+      inset 0 0 0.5em 0.25em var(--glow-color);
+  }
+  .cssbuttons-io {
+    position: relative;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    border-radius: 0.8em;
+    border: none;
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
+    color: ghostwhite;
+    overflow: hidden;
+  }
+
+  .cssbuttons-io svg {
+    width: 1.2em;
+    height: 1.2em;
+    margin-right: 0.5em;
+  }
+
+  .cssbuttons-io span {
+    position: relative;
+    z-index: 10;
+    transition: color 0.4s;
+    display: inline-flex;
+    align-items: center;
+    padding: 0.8em 1.2em 0.8em 1.05em;
+  }
+
+  .cssbuttons-io::before,
+  .cssbuttons-io::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+
+  .cssbuttons-io::before {
+    content: "";
+    background: #000;
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+  }
+
+  .cssbuttons-io:hover::before {
+    transform: translate3d(100%, 0, 0);
+  }
+
+  .cssbuttons-io:active {
+    transform: scale(0.95);
+  }
+
+  button {
+    /* Variables */
+    --button_radius: 0.75em;
+    --button_color: #e8e8e8;
+    --button_outline_color: #000000;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    border-radius: var(--button_radius);
+    background: var(--button_outline_color);
+  }
+
+  .button_top {
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid var(--button_outline_color);
+    border-radius: var(--button_radius);
+    padding: 0.75em 1.5em;
+    background: var(--button_color);
+    color: var(--button_outline_color);
+    transform: translateY(-0.2em);
+    transition: transform 0.1s ease;
+  }
+
+  button:hover .button_top {
+    /* Pull the button upwards when hovered */
+    transform: translateY(-0.33em);
+  }
+
+  button:active .button_top {
+    /* Push the button downwards when pressed */
+    transform: translateY(0);
+  }
+}
