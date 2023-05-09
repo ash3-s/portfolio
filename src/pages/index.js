@@ -37,7 +37,7 @@ const Index = () => {
               <div className="-mr-2 flex items-center sm:hidden">
                 <button
                   type="button"
-                  className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-900 focus:text-white"
+                  className="inline-flex mt-10 items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-900 focus:text-white"
                   onClick={toggleNavbar}
                 >
                   <svg
@@ -95,9 +95,9 @@ const Index = () => {
         </div>
       </h1>
       <h2 className="font-mon text-6xl mx-auto lg:mx-16 mb-20">Projects</h2>
-      <div className="max-w-md mx-auto lg:max-w-fit lg:mt-28  bg-gray-900 rounded-xl shadow-md overflow-hidden md:max-w-2xl ">
+      <div className="max-w-md mx-auto lg:max-w-fit lg:mt-28 lg:p-0 lg:scale-100 md:scale-95 scale-95 bg-gray-900 rounded-xl shadow-md overflow-hidden md:max-w-2xl ">
         <div className="md:flex justify-center items-center">
-          <div className="md:flex-shrink-0 py-20 ml-5">
+          <div className="md:flex-shrink-0 py-20 lg:ml-5 ml-1">
             <svg
               width="346.5"
               height="91.21367493541021"
@@ -137,6 +137,7 @@ const Index = () => {
               </g>
             </svg>
           </div>
+
           <div className="p-8">
             <div className="uppercase tracking-wide text-2xl text-indigo-500 font-semibold">
               <h2 className="font-pop text-4xl">WatchStack</h2>
