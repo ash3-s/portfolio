@@ -161,7 +161,7 @@ const Index = () => {
               </button>
               <button>
                 <a
-                  href="https://movie-3xttohvhx-ash3-s.vercel.app/"
+                  href="https://movie-app-ash3-s.vercel.app/"
                   className="button_top"
                 >
                   Go There
