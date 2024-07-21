@@ -22,7 +22,7 @@ const Index = () => {
                 </a>
                 <a
                   href="#"
-                  className="mt-9 block px-3 py-2 mr-2 rounded-md text-base font-medium text-white hover:underline"
+                  className="mt-9 block px-3 py-2 mr-3 rounded-md text-base font-medium text-white hover:underline"
                 >
                   Projects
                 </a>
