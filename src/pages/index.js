@@ -87,7 +87,7 @@ const Index = () => {
         <div>Ashwin S</div>
         <div>
           <h2 className="font-rob from-sky-400 via-violet-400 to-purple-500  text-6xl pt-8">
-            Web Developer
+            Full Stack Developer
           </h2>
         </div>
         <div>
