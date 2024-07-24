@@ -37,7 +37,7 @@ const Index = () => {
               <div className="-mr-2 flex items-center sm:hidden">
                 <button
                   type="button"
-                  className="inline-flex mt-10 items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-900 focus:text-white"
+                  className="inline-flex mt-10 items-center justify-center p-2 rounded-md text-gray-600 hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-900 focus:text-white"
                   onClick={toggleNavbar}
                 >
                   <svg
