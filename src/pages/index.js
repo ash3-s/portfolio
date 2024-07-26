@@ -83,7 +83,7 @@ const Index = () => {
           </div>
         </nav>
       </div>
-      <h1 className="opacity-80 transition-opacity duration-1000 ease-in-out hover:from-violet-400 hover:to-sky-400 hover:drop-shadow-lg hover:opacity-100 py-72 font-Rampart text-transparent bg-clip-text text-center font-bold text-8xl bg-gradient-to-r from-sky-400 via-violet-400 to-purple-500 ">
+      <h1 className="opacity-90 transition-opacity duration-1000 ease-in-out hover:from-violet-400 hover:to-sky-400 hover:drop-shadow-lg hover:opacity-100 py-72 font-Rampart text-transparent bg-clip-text text-center font-bold text-8xl bg-gradient-to-r from-sky-400 via-violet-400 to-purple-500 ">
         <div>Ashwin Suresh</div>
         <div>
           <h2 className="font-rob from-sky-400 via-violet-400 to-purple-500  text-6xl pt-8">
