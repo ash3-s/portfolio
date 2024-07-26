@@ -63,7 +63,7 @@ const Index = () => {
             <div className="px-2 pt-2 pb-3 space-y-1 transition duration-200 ease-out">
               <a
                 href="#"
-                className="block px-3 py-2 rounded-md text-base font-medium text-white focus:bg-gray-900 focus:outline-none focus:text-white"
+                className="block px-3 py-2 rounded-md text-base font-medium text-white focus:bg-gray-800 focus:outline-none focus:text-white"
               >
                 About
               </a>
